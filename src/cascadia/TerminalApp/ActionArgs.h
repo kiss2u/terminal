@@ -143,7 +143,7 @@ namespace winrt::TerminalApp::implementation
     struct SwitchToTabArgs : public SwitchToTabArgsT<SwitchToTabArgs>
     {
         SwitchToTabArgs() = default;
-        GETSET_PROPERTY(uint32_t, TabIndex, 0);
+        GETSET_PROPERTY(uint32_t, TabIndex, (uint32_t)0);
 
         static constexpr std::string_view TabIndexKey{ "index" };
 
